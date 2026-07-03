@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comedor-Tech | Control de Acceso</title>
+</head>
+<body>
+  <h2>COMEDOR-TECH</h2>
+  <nav>
+    <button>Reserva</button>
+    <button>Control</button>
+    <button>Salir</button>
+    <button>Ticket</button>
+    <button>Acceso</button>
+  </nav>
+
+  <label>Escanee Código de Barras / QR del Ticket:</label>
+  <input type="text" id="ticketInput" value="TICKET-221045-2026">
+  <button id="validarEntrada">Validar Entrada</button>
+
+  <table id="tablaEstudiante" border="1">
+    <thead>
+      <tr>
+        <th>Código Estudiante</th>
+        <th>Nombres y Apellidos</th>
+        <th>Turno Reservado</th>
+        <th>Estado de Ticket</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>221045</td>
+        <td>Julio Cesar Lloclli</td>
+        <td>Turno 1 (11:30 AM)</td>
+        <td>VÁLIDO - SIN SERVIR</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>CONTROL DE ACCESO EXITOSO: Permita el ingreso del comensal y entregue la bandeja de alimentos.</p>
+
+  <button id="registrarAtendido">REGISTRAR COMO ATENDIDO / SERVIDO</button>
+</body>
+</html>

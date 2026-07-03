@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comedor-Tech | Reserva</title>
+</head>
+<body>
+  <h2>COMEDOR-TECH</h2>
+  <section>
+    <h3>1. Identificación del Estudiante / Comensal</h3>
+    <label>Código Universitario:</label>
+    <input type="text" id="codigoUniv" value="221045">
+    <button id="verificarEstado">Verificar Estado</button>
+  </section>
+
+  <section>
+    <h3>2. Selección de Turno de Almuerzo</h3>
+    <label><input type="radio" name="turno" value="1"> Turno 1 (11:30 AM - 12:15 PM)</label>
+    <label><input type="radio" name="turno" value="2"> Turno 2 (12:15 PM - 01:00 PM)</label>
+    <label><input type="radio" name="turno" value="3"> Turno 3 (01:00 PM - 01:45 PM)</label>
+  </section>
+
+  <section>
+    <h3>3. Tipo de Dieta Especial</h3>
+    <label><input type="checkbox" id="dietaEspecial"> Solicitar Menú Vegetariano / Dieta Médica</label>
+  </section>
+
+  <button id="generarTicket">GENERAR TICKET DE COMEDOR</button>
+</body>
+</html>
