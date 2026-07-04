@@ -8,12 +8,28 @@
   <h1>COMEDOR-TECH</h1>
   <form id="loginForm">
     <label>Código o Correo Institucional:</label>
-    <input type="text" id="codigo" placeholder="221045@unsaac.edu.pe">
+    <input type="text" id="codigo" placeholder="221045@unamba.edu.pe">
 
     <label>Contraseña:</label>
     <input type="password" id="password">
 
     <button type="submit">INGRESAR AL SISTEMA</button>
   </form>
+
+  <script>
+    // Identificación del lector/comensal por correo institucional
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const codigo = document.getElementById("codigo").value.trim();
+
+      if (!codigo.includes("@unamba.edu.pe")) {
+        alert("Debe ingresar su correo institucional válido (@unamba.edu.pe)");
+        return;
+      }
+
+      console.log("Lector identificado:", codigo);
+      alert("Identificación correcta. Bienvenido " + codigo);
+    });
+  </script>
 </body>
 </html>
